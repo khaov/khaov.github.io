@@ -14,11 +14,29 @@
 
 <body class="body">
   <div class="body__wrapper">
+    <div class="body__background body__background--legion">
+      <div class="body__background-wrapper">
+        <div class="body__background-image"></div>
+      </div>
+    </div>
+    <div class="body__pattern">
+      <div class="body__pattern-wrapper">
+        <div class="body__pattern-top">
+          <div class="body__pattern-top-left"></div>
+          <div class="body__pattern-top-center"></div>
+          <div class="body__pattern-top-right"></div>
+        </div>
+        <div class="body__pattern-bottom">
+          <div class="body__pattern-bottom-left"></div>
+          <div class="body__pattern-bottom-center"></div>
+          <div class="body__pattern-bottom-right"></div>
+        </div>
+      </div>
+    </div>
     <header class="body__header">
       <header class="header block">
         <div class="header__wrapper block__wrapper"><a class="header__logo header__logo--mr-auto logo" href="#" title="#"><img src="images/logo/lenovo.jpg" alt="Lenonv" /></a>
           <div class="header__main">
-            <button class="header__close" type="button" title="Закрыть меню"></button>
             <nav class="header__nav nav">
               <ul class="nav__list">
                 <li class="nav__item"><a href="#" title="Перейти на страницу Аукцион"><span>Аукцион</span></a></li>
@@ -26,9 +44,11 @@
                 <li class="nav__item"><a href="#" title="Узнать, как залутать?"><span>Как залутать?</span></a></li>
               </ul>
               <a class="button header__button header__button_md-hidden button_fill" href="#"><span class="button__content"><span class="button__title">Регистрация/Вход</span></span></a>
-              <a class="button header__button header__button_md-visible button_fill" href="#"><span class="button__content"><span class="button__title">Вступить в легион</span></span></a>
             </nav>
           </div><a class="header__logo header__logo--ml-auto logo" href="#" title="#"><img src="images/logo/intel.png" alt="Intel" /></a>
+          <button class="header__menu-toggle menu-toggle js-menu-toggle js-navigation-modal" type="button" data-src="#navigation-modal" title="Закрыть меню">
+            <div class="menu-toggle__background"></div><span class="menu-toggle__content"><span></span><span></span><span></span></span>
+          </button>
         </div>
       </header>
     </header>
@@ -41,7 +61,7 @@
           </div>
           <div class="block__main">
             <div class="goods">
-              <ul class="goods__list owl-carousel js-carousel">
+              <ul class="goods__list js-carousel">
                 <div class="good js-preview-modal" data-src="#preview-modal">
                   <div class="good__wrapper">
                     <div class="good__main">
@@ -166,6 +186,16 @@
                     <div class="offer__quantity offer__quantity--available"><span class="offer__quantity-value">15</span>осталось</div>
                   </div>
                 </div>
+              </a><a class="filter__item" href="https://www.ivi.ru/">
+                <div class="offer">
+                  <div class="offer__image">
+                    <div class="offer__image-wrapper" style="background-image: url(images/pics/offers/offer-02.jpg)"></div>
+                  </div>
+                  <div class="offer__data">
+                    <div class="offer__quantity offer__quantity--total"><span class="offer__quantity-value">350</span>промокодов на этой неделе</div>
+                    <div class="offer__quantity offer__quantity--available"><span class="offer__quantity-value">210</span>осталось</div>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
@@ -195,11 +225,14 @@
               <use xlink:href="images/sprite.svg#icon-close"></use>
             </svg>
           </button>
+          <div class="modal__dropdown" id="activation">
+            <p>Для активации промокода необходимо указать данные банковской карты. Промокод доступен только для новых пользователей ivi или пользователей ivi, которые не использовали другие промокоды ivi в течение 180 дней. Один уникальный код предназна- чен для активации на одном аккаунте ivi. Срок активации промокода — до ?? мая 2020 года. В настройках аккаунта ivi включе- но автопродление. Отключение автопродления возможно в аккаунте ivi. Использование сервиса ivi доступно для лиц старше 18 лет. Пробный период пользования подпиской ivi предоставляется в соответствии с Пользовательским соглашением сервиса ivi (<a class="link" href="https://www.ivi.ru/info/agreement" title="Пользовательское соглашение">https://www.ivi.ru/info/agreement</a>) и Правилами использования сертификатов <a class="link" href="https://www.ivi.ru/info/certificate" title="Правила использования Сертификатов">https://www.ivi.ru/info/certificate</a></p>
+          </div>
           <div class="modal__side">
-            <div class="modal__image" style="background-image: url(&quot;images/pics/partners/partner-01.jpg&quot;)" aria-label="М.Видео"></div><span>*не больше 10 промокодов для каждого легионера</span>
+            <div class="modal__image" style="background-image: url(&quot;images/pics/offers/offer-02.jpg&quot;)" aria-label="Ivi"></div><span>*не больше 10 промокодов для каждого легионера</span>
           </div>
           <div class="modal__main">
-            <div class="modal__content">
+            <div class="modal__content"><img class="modal__age" src="images/icons/+18.png" alt="+18" />
               <div class="modal__title">ivi</div>
               <div class="modal__description">Крупнейший онлайн-кинотеатр в России. Наша&nbsp;коллекция насчитывает свыше 80 000 сериалов и фильмов: от голливудских студий до фестивальных премьер, от эксклюзивных новинок до неэкслюзивных.</div>
             </div>
@@ -215,22 +248,24 @@
                       <div class="accounts__col">
                         <div class="accounts__currency">киллов</div>
                         <div class="accounts__total">
-                          у тебя
-                          <div class="accounts__remark js-accounts-total">10 674</div>
-                        </div>
+                          у тебя: <span class="accounts__remark js-accounts-total">10 674</span></div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="modal__col">
-                  <button class="button modal__button button_filled" type="button"><span class="button__content"><span class="button__title">Купить</span></span></button>
+                  <button class="button modal__button button_filled js-confirm-modal" type="button" data-src="#confirm-modal"><span class="button__content"><span class="button__title">Купить</span></span></button>
                 </div>
               </div>
+              <button class="button modal__trigger-dropdown button_dashed button_dropdown js-toggle-dropdown" type="button" data-dropdown="#activation"><span class="button__content"><span class="button__icon button__icon_right button__icon_dropdown-arrow">
+                    <svg width="9" height="5">
+                      <use xlink:href="images/sprite.svg#icon-arrow-up"></use>
+                    </svg></span><span class="button__title">Правила использования промокода</span></span></button>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal modal--confirm" style="display: none;">
+      <div class="modal modal--confirm" id="confirm-modal" style="display: none;">
         <div class="modal__wrapper">
           <div class="modal__background"></div>
           <button class="modal__close" type="button" title="Закрыть модальное окно" data-fancybox-close="data-fancybox-close">
@@ -238,9 +273,17 @@
               <use xlink:href="images/sprite.svg#icon-close"></use>
             </svg>
           </button>
+          <div class="modal__main">
+            <div class="modal__title">Легионер, подтверди обмен: <span class="modal__choice js-confirm-choice">1 месяц подписки ivi</span></div>
+            <div class="modal__total">Стоимость: 500 киллов</div>
+          </div>
+          <div class="modal__side">
+            <button class="button modal__button button_filled js-processing-modal" type="button" data-src="#processing-modal"><span class="button__content"><span class="button__title">Подтверждаю</span></span></button>
+            <button class="button modal__button button_fill button_text-blue" type="button" data-fancybox-close=""><span class="button__content"><span class="button__title">Нет</span></span></button>
+          </div>
         </div>
       </div>
-      <div class="modal modal--processing" style="display: none;">
+      <div class="modal modal--processing" id="processing-modal" style="display: none;">
         <div class="modal__wrapper">
           <div class="modal__background"></div>
           <button class="modal__close" type="button" title="Закрыть модальное окно" data-fancybox-close="data-fancybox-close">
@@ -248,6 +291,46 @@
               <use xlink:href="images/sprite.svg#icon-close"></use>
             </svg>
           </button>
+          <div class="modal__container">
+            <div class="modal__main">
+              <div class="modal__title">Твой промокод</div>
+              <div class="modal__code js-processing-code">RRFGGFEDFS-2233</div>
+              <p>Ты всегда сможешь найти его в своем <a class="link" href="#" title="Перейти в личный кабинет">личном кабинете</a></p>
+            </div>
+            <div class="modal__side">
+              <p>Все подробности об использовании <a class="link" href="#" title="Узнать подробнее про промокод">промокода</a> читай на сайте <a class="link" href="#" title="Перейти на сайт ivi.ru">ivi.ru </a></p>
+              <button class="button modal__button button_filled" type="button" data-fancybox-close=""><span class="button__content"><span class="button__title">Хорошо!</span></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--navigation" id="navigation-modal" style="display: none;">
+        <div class="modal__wrapper">
+          <div class="modal__background"></div>
+          <button class="modal__close" type="button" title="Закрыть модальное окно" data-fancybox-close="data-fancybox-close">
+            <svg width="18" height="18">
+              <use xlink:href="images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="modal__container">
+            <div class="modal__side">
+              <div class="modal__close" data-fancybox-close="">
+                <svg width="80" height="80">
+                  <use xlink:href="images/sprite.svg#icon-close-large"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal__main">
+              <nav class="modal__nav nav nav--vertical">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="#" title="Перейти на страницу Аукцион"><span>Аукцион</span></a></li>
+                  <li class="nav__item"><a href="#" title="Перейти на страницу Lenovo Legion"><span>Lenovo Legion</span></a></li>
+                  <li class="nav__item"><a href="#" title="Узнать, как залутать?"><span>Как залутать?</span></a></li>
+                  <a class="button header__button header__button_md-visible button_fill" href="#"><span class="button__content"><span class="button__title">Вступить в легион</span></span></a>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
     </main>
