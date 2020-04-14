@@ -62,7 +62,7 @@
           <div class="block__main">
             <div class="goods">
               <ul class="goods__list js-carousel">
-                <div class="good js-preview-modal" data-src="#preview-modal">
+                <div class="good">
                   <div class="good__wrapper">
                     <div class="good__main">
                       <div class="good__background" style="background-image: url(images/pics/goods/good-bg-1.jpg)"></div>
@@ -70,12 +70,12 @@
                       <div class="good__image" style="background-image: url(images/pics/goods/good-img-1.jpg)" aria-label="Red Dead &lt;br&gt; Redemption 2"></div>
                     </div>
                     <div class="good__side">
-                      <p> <span>5 000 </span>киллов</p>
-                      <div class="button good__button button_fill" type="button"><span class="button__content"><span class="button__title">Купить</span></span></div>
+                      <div class="good__price"> <span>5 000 </span>киллов</div>
+                      <div class="button good__button button_fill  js-preview-modal" type="button" data-src="#preview-modal"><span class="button__content"><span class="button__title">Купить</span></span></div>
                     </div>
                   </div>
                 </div>
-                <div class="good js-preview-modal" data-src="#preview-modal">
+                <div class="good">
                   <div class="good__wrapper">
                     <div class="good__main">
                       <div class="good__background" style="background-image: url(images/pics/goods/good-bg-2.jpg)"></div>
@@ -83,25 +83,43 @@
                       <div class="good__image" style="background-image: url(images/pics/goods/good-img-2.jpg)" aria-label="MK 11 Premium &lt;br&gt; edition"></div>
                     </div>
                     <div class="good__side">
-                      <p> <span>15 700 </span>киллов</p>
-                      <div class="button good__button button_fill" type="button"><span class="button__content"><span class="button__title">Купить</span></span></div>
+                      <div class="good__price"> <span>15 700 </span>киллов</div>
+                      <div class="button good__button button_fill  js-preview-modal" type="button" data-src="#preview-modal"><span class="button__content"><span class="button__title">Купить</span></span></div>
                     </div>
                   </div>
                 </div>
-                <div class="good js-preview-modal" data-src="#preview-modal">
+                <div class="good">
                   <div class="good__wrapper">
                     <div class="good__main">
                       <div class="good__background" style="background-image: url(images/pics/goods/good-bg-3.jpg)"></div>
                       <h3 class="good__title">XCOM 2 <br> War of the Chosen</h3>
                       <div class="good__image" style="background-image: url(images/pics/goods/good-img-3.jpg)" aria-label="XCOM 2 &lt;br&gt; War of the Chosen"></div>
                     </div>
-                    <div class="good__side">
-                      <p> <span>15 000 </span>киллов</p>
-                      <div class="button good__button button_fill good__button--lg" type="button" disabled="disabled"><span class="button__content"><span class="button__title">Уведомить</span></span></div>
+                    <div class="good__side js-timer-container">
+                      <div class="good__timer timer js-timer" data-date="2020/5/14 12:00:00">
+                        <div class="timer__side">Доступен через</div>
+                        <div class="timer__main">
+                          <div class="timer__item" id="days">
+                            <div class="timer__value">4</div>
+                            <div class="timer__unit">дня</div>
+                          </div>
+                          <div class="timer__item" id="hours">
+                            <div class="timer__value">2</div>
+                            <div class="timer__unit">часа</div>
+                          </div>
+                          <div class="timer__item" id="minutes">
+                            <div class="timer__value">30</div>
+                            <div class="timer__unit">минут</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="good__price js-good-price is-hidden"> <span>15 000 </span>киллов</div>
+                      <div class="button good__button button_filled js-preview-modal js-button-buy is-hidden" type="button" data-src="#preview-modal"><span class="button__content"><span class="button__title">Купить</span></span></div>
+                      <div class="button good__button button_fill good__button--lg button_gray js-button-notify" type="button"><span class="button__content"><span class="button__title">Уведомить</span></span></div>
                     </div>
                   </div>
                 </div>
-                <div class="good js-preview-modal" data-src="#preview-modal">
+                <div class="good">
                   <div class="good__wrapper">
                     <div class="good__main">
                       <div class="good__background" style="background-image: url(images/pics/goods/good-bg-4.jpg)"></div>
@@ -109,12 +127,12 @@
                       <div class="good__image" style="background-image: url(images/pics/goods/good-img-4.jpg)" aria-label="Watch Dogs: &lt;br&gt; Legion"></div>
                     </div>
                     <div class="good__side">
-                      <p> <span>12 000 </span>киллов</p>
-                      <div class="button good__button button_fill" type="button"><span class="button__content"><span class="button__title">Купить</span></span></div>
+                      <div class="good__price"> <span>12 000 </span>киллов</div>
+                      <div class="button good__button button_fill  js-preview-modal" type="button" data-src="#preview-modal"><span class="button__content"><span class="button__title">Купить</span></span></div>
                     </div>
                   </div>
                 </div>
-                <div class="good js-preview-modal" data-src="#preview-modal">
+                <div class="good">
                   <div class="good__wrapper">
                     <div class="good__main">
                       <div class="good__background" style="background-image: url(images/pics/goods/good-bg-5.jpg)"></div>
@@ -122,8 +140,8 @@
                       <div class="good__image" style="background-image: url(images/pics/goods/good-img-5.jpg)" aria-label="Doom &lt;br&gt; Eternal"></div>
                     </div>
                     <div class="good__side">
-                      <p> <span>5 000 </span>киллов</p>
-                      <div class="button good__button button_fill" type="button"><span class="button__content"><span class="button__title">Купить</span></span></div>
+                      <div class="good__price"> <span>5 000 </span>киллов</div>
+                      <div class="button good__button button_fill  js-preview-modal" type="button" data-src="#preview-modal"><span class="button__content"><span class="button__title">Купить</span></span></div>
                     </div>
                   </div>
                 </div>
@@ -132,23 +150,23 @@
           </div>
         </div>
       </section>
-      <section class="filter block">
+      <section class="filter block js-filter">
         <div class="filter__wrapper block__wrapper">
           <div class="filter__side">
             <div class="filter__title title">Предложения от партнеров:</div>
-            <div class="filter__options"><a class="filter__option" data-filter-select="#1">Все предложения
+            <div class="filter__options"><a class="filter__option js-option is-active" data-filter-select="all">Все предложения
                 <div class="filter__state">
                   <div class="filter__state-part filter__state-part--left"></div>
                   <div class="filter__state-part filter__state-part--right"></div>
-                </div></a><a class="filter__option" data-filter-select="#2">Поездки
+                </div></a><a class="filter__option js-option" data-filter-select="#1">Поездки
                 <div class="filter__state">
                   <div class="filter__state-part filter__state-part--left"></div>
                   <div class="filter__state-part filter__state-part--right"></div>
-                </div></a><a class="filter__option" data-filter-select="#3">Еда
+                </div></a><a class="filter__option js-option" data-filter-select="#2">Еда
                 <div class="filter__state">
                   <div class="filter__state-part filter__state-part--left"></div>
                   <div class="filter__state-part filter__state-part--right"></div>
-                </div></a><a class="filter__option" data-filter-select="#4">Развлечения
+                </div></a><a class="filter__option js-option" data-filter-select="#3">Развлечения
                 <div class="filter__state">
                   <div class="filter__state-part filter__state-part--left"></div>
                   <div class="filter__state-part filter__state-part--right"></div>
@@ -156,7 +174,7 @@
             </div>
           </div>
           <div class="filter__main">
-            <div class="filter__list"><a class="filter__item" href="https://www.delivery-club.ru/">
+            <div class="filter__list"><a class="filter__item js-filter-item" href="https://www.delivery-club.ru/" data-filter-value="#1">
                 <div class="offer">
                   <div class="offer__image">
                     <div class="offer__image-wrapper" style="background-image: url(images/pics/offers/offer-01.jpg)"></div>
@@ -166,7 +184,7 @@
                     <div class="offer__quantity offer__quantity--available"><span class="offer__quantity-value">170</span>осталось</div>
                   </div>
                 </div>
-              </a><a class="filter__item" href="https://www.ivi.ru/">
+              </a><a class="filter__item js-filter-item" href="https://www.ivi.ru/" data-filter-value="#2">
                 <div class="offer">
                   <div class="offer__image">
                     <div class="offer__image-wrapper" style="background-image: url(images/pics/offers/offer-02.jpg)"></div>
@@ -176,7 +194,7 @@
                     <div class="offer__quantity offer__quantity--available"><span class="offer__quantity-value">210</span>осталось</div>
                   </div>
                 </div>
-              </a><a class="filter__item" href="https://city-mobil.ru/">
+              </a><a class="filter__item js-filter-item" href="https://city-mobil.ru/" data-filter-value="#3">
                 <div class="offer">
                   <div class="offer__image">
                     <div class="offer__image-wrapper" style="background-image: url(images/pics/offers/offer-03.jpg)"></div>
@@ -186,7 +204,7 @@
                     <div class="offer__quantity offer__quantity--available"><span class="offer__quantity-value">15</span>осталось</div>
                   </div>
                 </div>
-              </a><a class="filter__item" href="https://www.ivi.ru/">
+              </a><a class="filter__item js-filter-item" href="https://www.ivi.ru/" data-filter-value="#1">
                 <div class="offer">
                   <div class="offer__image">
                     <div class="offer__image-wrapper" style="background-image: url(images/pics/offers/offer-02.jpg)"></div>
