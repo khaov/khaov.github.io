@@ -69722,7 +69722,7 @@ vec4 envMapTexelToLinear(vec4 color) {
     var light = new DirectionalLight(0x85c1ff, 1);
     light.position.set(0, 0, 1000);
     scene.add(light);
-    var smokeTexture = new TextureLoader().load('/images/bg/smoke.png');
+    var smokeTexture = new TextureLoader().load('../images/bg/smoke.png');
     var smokeMaterial = new MeshLambertMaterial({
       color: 0x85c1ff,
       map: smokeTexture,
